@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra nam nhuan</title>
+</head>
+<body>
+<script>
+    let yeah=parseInt(prompt("enter a yeah"));
+    let isleapyeah=false;
+    if (yeah%4==0){
+        if(yeah%100==0){
+            if(yeah%400==0){
+                isleapyeah=true;
+            }
+        }else {
+            isleapyeah=true;
+        }
+    }
+    if (isleapyeah){
+        alert(yeah +":" +" is a leap yeah")
+    }else {
+        alert(yeah +":"+" not is a leap yeah")
+    }
+</script>
+</body>
+</html>
